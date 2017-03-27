@@ -161,7 +161,7 @@ def Ttest(input,label): #orgSum dictionary is input
 def sort(SheetIn):
 
 	PFA =	['AA', 'aLA', 'EPA', 'DHA', 'LA']
-	Oxy =	['Ketones', 'Diols', 'Alcohols', 'Epoxides']
+	Oxy =	['Ketones', 'Diols', 'Alcohols','Alcohol Precursors', 'Epoxides','Triols','Prostaglandins']
 	Both = [PFA,Oxy]
 
 	[F,P]=F_PP(SheetIn) # Create Fasting and PP
