@@ -67,9 +67,9 @@ def Org_Sum(pairs,orgType):
 				for j in range(rows):
 					row = pairs[j]
 					if(pairs[j][0][2] == m or pairs[j][0][1] == m) and not contains_Nonetype(row[0],row[1]) and (pairs[j][0][2] == k or pairs[j][0][1] == k):
-						x = [orgSum[m+': '+k][0][z-4]+row[0][z] for z in range(3,13) ] #Fasting
+						x = [orgSum[m+': '+k][0][z-3]+row[0][z] for z in range(3,13) ] #Fasting
 						orgSum[m+': '+k][0] = x
-						y = [orgSum[m+': '+k][1][z-4]+row[1][z] for z in range(3,13) ] #Post Prandial
+						y = [orgSum[m+': '+k][1][z-3]+row[1][z] for z in range(3,13) ] #Post Prandial
 						orgSum[m+': '+k][1] = y
 					if(contains_Nonetype(row[0],row[1])): #keeps log of incomplete data oxylipins
 						hasNone.append(row[0][0][:-2])						
