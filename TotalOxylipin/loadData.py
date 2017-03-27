@@ -17,6 +17,7 @@ tgrl 		=	[]
 #turns excel sheet in to array
 for row in plasmawb.iter_rows(min_row=2):
 	rowV = []
+
 	for cell in row:
 		rowV.append(cell.value)
 	plasma.append(rowV)
