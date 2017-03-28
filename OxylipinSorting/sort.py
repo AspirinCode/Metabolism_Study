@@ -7,7 +7,7 @@ def sortOxylipins(sheetIn,sheetOut,offset):
 	parentfaDef =	{
 						'LA'	:	['-hode','kode','oxo-ode','epome','dihome','hpode','trihome'],
 						'aLA'	:	['-hote','kote','oxo-ote','epode','dihode'],
-						'AA'	:	['-hete','kete','oxo-ete','epetre','eet','dihetre','dhet''pgf2a','pgf1a','isops'],
+						'AA'	:	['-hete','kete','oxo-ete','epetre','eet','dihetre','dhet','pgf2a','pgf1a','isops'],
 						'EPA'	:	['-hepe','kepe','epete','dihete','hpete','dihetre'],
 						'DHA'	:	['hdohe','kdohe','epdope','edp','dihdope','epdpe']
 	}
