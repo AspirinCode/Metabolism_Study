@@ -1,5 +1,7 @@
 # Passerini Lab Metablism Study Data Analysis Scripts
 
+This folder contains an aggregation of scripts used to incrementally analyze data from a metabolimics study consisting of 10 donors.
+
 ## Folder Descriptions
 
 MetData: Original Metabolism data
