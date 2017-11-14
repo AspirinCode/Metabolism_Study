@@ -81,6 +81,9 @@ def Org_Sum(pairs,orgType):
 				row = pairs[j]
 				if(pairs[j][0][2] == m or pairs[j][0][1] == m) and not contains_Nonetype(row[0],row[1]):
 					x = [orgSum[m][0][z-3]+row[0][z] for z in range(3,13) ] #Fasting
+					for j in x:
+						if j>80:
+							#print [row,x]
 					orgSum[m][0] = x
 					y = [orgSum[m][1][z-3]+row[1][z] for z in range(3,13) ] #Post Prandial
 					orgSum[m][1] = y

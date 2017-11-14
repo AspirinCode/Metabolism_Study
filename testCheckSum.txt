@@ -1,0 +1,11 @@
+SHA1(Analysis of Dr. Newman Data.xlsx)= 56f2b7dff9ce52e4cdfde5963af38094dfb587a0
+SHA1(Paired-T_SA.xlsx)= a36b71e8fa5352fd33f76156aaea8927bb864524
+SHA1(PairedT-2.R)= ca29d17852becbce21e012c31a96b4f147c4f5be
+SHA1(PairedT.R)= 7e39efd8df8bdceb2868211a5fdad481e1288ab6
+SHA1(PairedWriter.R)= 6fff20a97399ac5db8eb706129c3fb0aa72b76a3
+SHA1(Passerini TGRL-Plasma Final Res.xlsx)= 2960948505a875e3392259d8131ccafd4c741fd3
+SHA1(Pro-v-Anti_SA.xlsx)= 6d429415b0b0de11c2d93935cad7066f4bdbe151
+SHA1(testCheckSum.txt)= da39a3ee5e6b4b0d3255bfef95601890afd80709
+SHA1(testPairedT.R)= 879d8bbaa0b5ff2221191e0c56d9b7f42b59d39b
+SHA1(~$Paired-T_SA.xlsx)= 21e47a56ce354d95efc71ca5a859f5f3c55d967a
+SHA1(~$Passerini TGRL-Plasma Final Res.xlsx)= 21e47a56ce354d95efc71ca5a859f5f3c55d967a

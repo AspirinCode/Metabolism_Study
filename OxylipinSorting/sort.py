@@ -38,18 +38,26 @@ def sortOxylipins(sheetIn,sheetOut,offset):
 
 				pfa 		=	0
 				oxy 		=	0
+				neither		=	1
 				#classification of individual names
 				for key,value in parentfaDef.items():
 					for x in value:
 						matchPFA = re.search(x,cell.value,re.I)					
 						if matchPFA:
 							pfa = key
+							neither = 0
 				for key,value in oxylipinDef.items():
 					for x in value:
 						matchOxy = re.search(x,cell.value,re.I)
 						if matchOxy:
 							oxy = key
-	
+							neither = 0
+		if tmp[1]:
+			tmp.pop(0) #removes blank space added to tmp
+			tmp.insert(1,oxy) #insert oxylipin type
+			tmp.insert(2,pfa) #insert parent fatty acid
+			sheetOut.append(tmp)
+		'''				
 		if(pfa and oxy and tmp[1]):
 			tmp.pop(0) #removes blank space added to tmp
 			tmp.insert(1,oxy) #insert oxylipin type
@@ -60,8 +68,14 @@ def sortOxylipins(sheetIn,sheetOut,offset):
 			tmp.insert(1,oxy) #insert oxylipin type
 			tmp.insert(2,pfa) #insert parent fatty acid			
 			error.append(tmp)
-	print error
+		if (neither and tmp[1]):
+			tmp.pop(0)
+			tmp.insert(1,oxy)
+			tmp.insert(1,pfa)
+			sheetOut.append(tmp)
 
+	print error
+		'''
 	return
 
 

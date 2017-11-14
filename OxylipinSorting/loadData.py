@@ -25,5 +25,5 @@ sortOxylipins(tgrl,tSort,1)
 print ('tSort done!')
 
 
-results.save(filename='../results/sortedOxylipins_SA.xlsx')
+results.save(filename='../results/sortedAll_SA.xlsx')
 

@@ -2,11 +2,11 @@ from openpyxl import load_workbook,Workbook
 import numpy as np
 import re
 import scipy.stats as stat
-import sort
+import sort2 as sort
 
 
 #Get excel sheet of sorted oxylipins
-wb1 		= 	load_workbook(filename = '../results/sortedOxylipins_SA.xlsx')
+wb1 		= 	load_workbook(filename = '../results/sortedAll_SA.xlsx')
 plasmawb 	=	wb1['Plasma']
 tgrlwb 		=	wb1['TGRL']
 
@@ -33,17 +33,16 @@ results		=	Workbook()
 pSort 		= 	results.active
 pSort.title	=	'Plasma'
 tSort 		= 	results.create_sheet(title="TGRL")
-tSum		=	results.create_sheet(title="TGRL-Sums")
-pSum		=	results.create_sheet(title="Plasma-Sums")
+
 
 #run sorting and write to sheets
-pRes = sort.sort(plasma)
-tRes = sort.sort(tgrl)
-sort.write_results(pRes,pSort,pSum)
-sort.write_results(tRes,tSort,tSum)
+pRes = sort.sort(plasma,pSort)
+tRes = sort.sort(tgrl,tSort)
+#sort.write_results(pRes,pSort,pSum)
+#sort.write_results(tRes,tSort,tSum)
 
 #save
-results.save(filename='../results/classify_sort-S-2.xlsx')
+results.save(filename='../results/classify_all.xlsx')
 
 
 
