@@ -25,4 +25,13 @@ oldCode: (R) Preliminary attempts at pairing Fasting and PP data and running Ano
 
 orgOxy: (Python) Reorganizes original metabolism data with columns for Donor,Pro/Anti,To/NE,F/PP, and each metabolite measured. Used for JMP analysis.
 
+ActivityIndex: (Python) Calculates activity idnex of LOX,COX, and CYP based on ratios of products to precursors. Seperated by NE-PP,NE-F,To-PP, and To-F
+
 results: General directory for results of scripts above.
+
+
+
+Sincerely,
+Samir Akre
+
+Last Updated: 5.24.18
